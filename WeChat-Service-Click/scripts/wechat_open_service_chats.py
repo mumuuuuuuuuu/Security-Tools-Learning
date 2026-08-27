@@ -4,9 +4,6 @@
   1. TXT：每行一个公众号名称，空行和 # 注释会被忽略。
   2. CSV：默认读取第一列，也可用 --name-column 指定列名。
 
-典型用法：
-  python wechat_open_service_chats.py accounts.txt --tesseract-cmd "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-
 脚本会依次处理列表中的公众号，最终停留在最后一个成功打开的聊天框。
 微信版本更新后，如果按钮文案不同，可通过 --search-label、--category-label、
 --message-label 参数补充候选文案。
